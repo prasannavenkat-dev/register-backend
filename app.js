@@ -34,7 +34,7 @@ app.get('/',function(req,res){
 res.send('server for register app started')
 })
 //GET DATA
-app.get('/getData',async function(req,res){
+app.get('/getData', async function(req,res){
    
  try{
 
@@ -44,15 +44,10 @@ app.get('/getData',async function(req,res){
     let result = await db.collection('entryList').find().toArray();
     console.log('DATA SENT');
      res.send(result)
-
- 
-
  }
  catch(error){
      console.log('error',error);
  }
-
-
 
 })
 
