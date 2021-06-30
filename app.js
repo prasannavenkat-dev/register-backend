@@ -30,6 +30,10 @@ const cors = require('cors')
 app.use(cors())
 //HOME
 
+app.get('/',function(req,res){
+res.send('server for register app started')
+})
+//GET DATA
 app.get('/getData',async function(req,res){
    
  try{
