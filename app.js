@@ -114,7 +114,7 @@ app.post('/sendData',async function(req,res){
         }
 
         clientInfo.close()
-        res.redirect('https://www.google.com/')
+        res.redirect('https://userregister.netlify.app/')
        
 
 
